@@ -14,7 +14,8 @@ import org.litote.kmongo.reactivestreams.KMongo
 import com.mongodb.ConnectionString
 
 fun main() {
-    embeddedServer(Netty, 9090) {
+    val port = System.getenv("PORT")?.toInt() ?: 9090
+    embeddedServer(Netty, port) {
         routing {
             route(ShoppingListItem.path) {
                 get {
