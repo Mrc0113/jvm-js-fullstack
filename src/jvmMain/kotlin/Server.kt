@@ -61,4 +61,3 @@ val shoppingList = mutableListOf(
     ShoppingListItem("Tomatoes 🍅", 2),
     ShoppingListItem("Orange Juice 🍊", 3)
 )
-
